@@ -48,7 +48,7 @@ name{
 
 .image-grid {
     --gap: 16px;
-    --num-cols: 2;
+    --num-cols: 1;
     --row-height: 300px;
 
     box-sizing: border-box;
