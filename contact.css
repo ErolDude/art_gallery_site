@@ -22,7 +22,7 @@ body {
 }
 
 nav ul {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     font-size: 1.25rem;
     list-style: none;
@@ -38,10 +38,11 @@ ul li {
     font-weight: bolder;
 }
 
-name{
+name {
     display: flex;
     justify-content: flex-start;
 }
+
 .hover-image {
     display: none;
 }
@@ -64,9 +65,15 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border:solid;
+    border: solid;
     border-width: 2px;
+    transition: all 0.2s ease;
 }
+
+img:hover {
+    transform: scale(1.005);
+}
+
 
 .image-grid-col-2 {
     grid-column: span 2;
@@ -92,4 +99,8 @@ footer {
 a {
     color: var(--green);
     text-decoration: none;
+}
+
+a:hover {
+    color: violet;
 }
