@@ -22,7 +22,7 @@ body {
 }
 
 nav ul {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     font-size: 1.25rem;
     list-style: none;
@@ -38,12 +38,27 @@ ul li {
     font-weight: bolder;
 }
 
-name{
+name {
     display: flex;
     justify-content: flex-start;
 }
+
 .hover-image {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
     display: none;
+    padding: 1rem;
+    background: var(--green);
+    font-weight: 400;
+    margin-top: 1.25rem;
+    margin-left: -2rem;
+}
+
+.hover-image:hover {
+    display: block;
 }
 
 .image-grid {
@@ -64,8 +79,13 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border:solid;
+    border: solid;
     border-width: 2px;
+    transition: all 0.2s ease;
+}
+
+img:hover {
+    transform: scale(1.005);
 }
 
 .image-grid-col-2 {
@@ -87,9 +107,14 @@ footer {
     display: inline;
     margin: 0 5% 0 0;
     font-size: 20px;
+    transition: all 0.2s ease;
 }
 
 a {
     color: var(--green);
     text-decoration: none;
+}
+
+a:hover {
+    color: violet;
 }
